@@ -30,21 +30,6 @@ function fjeniskapal($namakapal)
 
 function floadbahaya($idproses)
 {
-	$sqlbahaya = "SELECT * FROM tkapal_bahaya WHERE bahaya_proses = '1'";
-	$rowbahaya = mysql_query($sqlbahaya) or die ("sql bahaya database db_kapal gagal");
-	$no = 1;
-	while ($bahaya = mysql_fetch_assoc($rowbahaya))
-	{
-		$idbahaya = $bahaya['bahaya_id'];
-		$bahaya = $bahaya['bahaya_jenisbahaya'];
-			  echo "<tr>";
-			    echo "<td class=\"tg-baqh\">".$no."</td>";
-			    echo "<td class=\"tg-dzk6\">".$bahaya."</td>";
-			    echo "<td class=\"tg-baqh\"><input type=\"text\" name = \"p\"></td>";
-			    echo "<td class=\"tg-baqh\"><input type=\"text\" name = \"s\"></td>";
-			    echo "<td class=\"tg-baqh\"><input type=\"submit\" value = \"hitung\"></td>";
-			  echo "</tr>";
-		$no++;
-	}
+	
 }
 ?>
